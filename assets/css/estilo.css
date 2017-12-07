@@ -1,0 +1,462 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,200,100,500,600,700,800,900);
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #4e56b4;
+    background: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+   transition: all 0.1s linear;
+   color: #3370d3;
+   text-decoration: none;
+}
+a:hover {
+    opacity: 0.8;
+}
+small {
+    font-size: 10px;
+    line-height: 100%;
+}
+small a {
+    font-weight: 400!important;
+}
+.contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+    position: relative;
+}
+.desktop {
+    display: none;
+}
+.tablet {
+    display: none;
+}
+.mobile {
+    display: block;
+}
+#header {
+    width: 100%;
+    position: relative;
+    /*top: 0;
+    left: 0;
+    z-index: 10;*/
+}
+#header h1 {
+    width: 260px;
+    margin: 25px auto 0;
+}
+#header h1 a{
+    text-indent: -9999px;
+    background: url(../img/icons/clinicaRecreo.png) no-repeat;
+    background-position: 0 0;
+    background-size: 260px auto;
+    display: block;
+    width: 260px;
+    height: 55px;
+}
+#header ul {
+    width: 100%;
+}
+#header ul li {
+    float: left;
+    width: auto;
+    height: 30px;
+}
+#header ul .phone {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #555555;
+    letter-spacing: -1px;
+    background: #EDEDED;
+    width: 55%;
+    padding: 8px 5% 12px 5%;
+}
+#header ul .phone a {
+    color: #693b95;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 5px;
+}
+#header ul .phone p {
+    font-size: 10px;
+    padding: 2px 0 0 0;
+}
+#header ul .phone p a {
+    font-size: 10px;
+}
+#header ul .redes {
+    
+}
+#header ul .redes a {
+    float: left;
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-indent: -9999px;
+    margin-right: 10px;
+}
+#header ul .redes a:last-child {
+    margin: 0;
+}
+#header ul .redes a.face {
+    background: url(../img/icons/facebook-icon.png) no-repeat;
+    background-size: 100% auto;
+}
+#header ul .redes a.inst {
+    background: url(../img/icons/instagram-icon.png) no-repeat;
+    background-size: 100% auto;
+}
+#header ul .redes a.pint {
+    background: url(../img/icons/whatsapp.jpg) no-repeat;
+    background-size: 100% auto;
+}
+#header ul .redes a.mail {
+    background: url(../img/icons/gmail-icon.png) no-repeat;
+    background-size: 100% auto;
+}
+ul{
+  list-style: none;
+}
+#menu li>a{
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li>a:hover{
+  color: black;
+  background-color: #eaeaea;
+}
+#menu>li{
+  float: left;
+  text-align:center
+}
+#header .box-lupa {
+    background: none;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    width: 25%;
+    height: 40px;
+    display: none;
+    padding: 8px 0;
+}
+#header .box-lupa input {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    appearance: none;
+    border: 1px solid #ccc;
+    padding: 2px 10px;
+    background: #fff;
+    width: 70%;
+    float: right;
+    font-size: 13px;
+    height: 20px;
+    color: #717171;
+}
+
+.texto {
+    padding: 30px 20px;
+    color: #3c3c3c;
+}
+.texto p {
+    font-size: 11px;
+    color: #3c3c3c;
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+.texto p strong {
+    font-weight: 700;
+}
+.texto p a {
+    color: #3370d3;
+    text-decoration: none;
+    font-weight: 700;
+}
+.texto iframe {
+    width: 750px;
+	min-height: 650px;
+	height: auto!important;	
+}
+
+.texto h1, .texto h2, .texto h3, .texto h4, .texto h5, .texto h6 {
+    font-size: 14px;
+    color: #5157b0;
+    line-height: 150%;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.texto ul, .texto ol {
+    width: 95%;
+    padding-left: 5%;
+    padding-bottom: 20px;
+}
+.texto ul li, .texto ol li {
+    font-size: 11px;
+    color: #3c3c3c;
+    line-height: 150%;
+    padding-bottom: 5px;
+    list-style: outside square;
+}
+.texto a {
+    color: #3370d3;
+    text-decoration: none;
+    font-weight: 700;
+}
+.texto table {
+    width: 100%;
+    border: 1px solid #ededed;
+    border-right: none;
+}
+.texto table th {
+    color: #fff;
+    background: #5157b0;
+    padding: 5px;
+    font-size: 14px;
+    
+}
+.texto table td {
+    color: #3c3c3c;
+    padding: 3px;
+    font-size: 12px;
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
+
+.revista .cabecera .botones .btn{
+        display: block;
+    }
+
+    .col-interior .btn {
+        margin-top: 10px;
+    }
+
+blockquote{
+  display: block;
+    background: #fff;
+    padding: 15px 20px 15px 57px;
+    margin: 0 0 20px;
+    position: relative;
+    color: #4064c2;
+    text-align: left;
+    border-left: 15px solid #4064c2;
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    font-style: italic;
+    line-height: 153%;
+    font-weight: 300;
+}
+
+blockquote::before{
+     content: "\201C";
+    font-family: georgia;
+    font-size: 93px;
+    color: #999;
+    position: absolute;
+    left: 6px;
+    top: 45px;
+}
+
+/**********RESPONSIVE**********/
+
+@media screen and (min-width:569px) {
+    .col-interior .btn {
+        display: block
+        }
+    .contenedor {
+        max-width: 760px;
+        min-width: 569px;
+    }
+    .tablet {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    #header h1 {
+        float: left;
+        margin: 35px 0 20px 50px;
+        width: 50%;
+    }
+    #header h1 a {
+        width: 334px;
+        height: 68px;
+        background-size: 334px auto;
+    }
+    #header ul {
+        float: right;
+        padding-top: 35px;
+        width: 33%;
+    }
+    #header ul li {
+        float: left;
+        border-right: 1px solid #ccc;
+        padding: 0 12px;
+    }
+    #header ul .phone {
+        width: auto;
+        background:#fff;
+        font-size: 14px;
+        border: none;
+        padding-bottom: 20px;
+    }
+    #header ul .phone a {
+        font-size: 18px;
+    }
+    #header ul .phone p {
+        font-size: 12px;
+        padding: 0 0 5px 0;
+    }
+    #header ul .phone p a {
+        font-size: 14px;
+    }
+    #header ul .redes {
+        height: auto;
+    }
+    #header ul .redes a {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
+    
+    
+@media screen and (min-width:1025px), screen\9 {
+    .contenedor {
+        max-width: 1260px;
+        min-width: 769px;
+    }
+    .desktop {
+        display: block;
+    }
+    #header h1 {
+        width: 40%;
+    }
+    #header h1 a {
+        width: 398px;
+        background-size: 398px auto;
+        height: 80px;
+    }
+    #header ul {
+        width: 620px;
+        padding-top: 65px;
+    }
+    #header ul li {
+        padding: 6px 12px;
+    }
+    #header ul .phone {
+        font-size: 20px;
+        border-right: 1px solid #ccc;
+        padding: 0px 36px 12px 12px;
+        line-height: 120%;
+    }
+    #header ul .phone a {
+        font-size: 28px;
+    }
+    #header ul .phone p {
+        font-size: 14px;
+    }
+    #header ul .phone p a {
+        font-size: 18px;
+    }
+    #header ul .redes a {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    #header .box-lupa {
+        top: 65px;
+        right: 131px;
+        width: 480px;
+        height: 40px;
+    }
+    #header .box-lupa {
+        top: 60px;
+    }
+    #header .box-lupa input {
+        font-size: 14px;
+        height: 30px;
+    }
+    
+    .texto p {
+        font-size: 16px;
+    }
+    .texto h1, .texto h2, .texto h3, .texto h4, .texto h5, .texto h6 {
+        font-size: 24px;
+    }
+    .texto ul li, .texto ol li {
+        font-size: 16px;
+    }
+    .texto table th {
+        font-size: 18px;
+    }
+    .texto table td {
+        font-size: 16px;
+    }
+    .texto iframe {
+	min-height: 650px;
+	height: auto!important;	
+    }
+}
+
+
+.guias {
+    width: 100%;
+    height: 1200px;
+    background: rgba(79, 91, 180, 0.8) url(/images/guias-new-site-movil.png) top center no-repeat;
+    opacity: 1;
+    transition: 1.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    cursor: pointer;
+   
+    }
+    .guias.op-zero {
+    opacity: 0;
+    top: 2000px;
+    height: 0;
+   
+    }
+    /*tablet*/
+    @media screen and (min-width:569px) {
+    .guias {
+        width: 100%;
+        height: 1800px;
+        background: rgba(79, 91, 180, 0.8) url(/images/guias-new-site-tablet.png) top center no-repeat;
+    }
+   
+    }
+    /*desktop*/
+    @media screen and (min-width:1025px), screen\9 {
+    .guias {
+        width: 100%;
+        height: 2000px;
+        background: rgba(79, 91, 180, 0.8) url(/images/guias-new-site.png) top center no-repeat;
+    }
+   
+}
+
+.post h4, h3 {
+    color: rgb(173,20,98);
+}
+
+	
+    
+    
+    
+    
+    
+    
+    
+    
+  
