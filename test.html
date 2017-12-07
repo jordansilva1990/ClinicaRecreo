@@ -1,0 +1,140 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 700px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: #cccccc;
+    color: white;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #1a66ff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 700px;
+}
+
+.enfermeria{
+ background: url('../assets/img/clinica.jpg')
+ 
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button style="font-size: 18px;" class="tablinks" onclick="openProcedure(event, 'procedimientos')" id="defaultOpen">Procedimientos</button>
+  <button style="font-size: 16px;" class="tablinks" onclick="openProcedure(event, 'enfermeria')">ENFERMERÍA</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Curación simple</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Curación compleja</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Cateterismo vesical</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Instalación catéter urinario permanente</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Cambio bolsa recolectora Foley</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Administración  de medicamento endovenoso</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Administración  de medicamento intramuscular</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Administración  de medicamento subcutáneo</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Fleboclisis</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Instalación sonda nasograstrica</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Nebulización</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Extraccion de puntos</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Hemoglucotest</button>
+  <button style="font-size: 16px;" class="tablinks" onclick="openProcedure(event, 'Tokyo')">TOMA DE MUESTRAS</button>
+  <button style="font-size: 16px;" class="tablinks" onclick="openProcedure(event, 'Tokyo')">CARDIOLÓGICOS</button> 
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">ELECTROCARDIOGRAMA</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">DOPPLER COLOR</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">DOPPLER COLOR 2D</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">HOLTER DE PRESIÓN</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">HOLTER DE ARRITMIA</button>
+  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">TEST DE ESFUERZO</button>
+  <button style="font-size: 16px;" class="tablinks" onclick="openProcedure(event, 'Tokyo')">ECOTOMOGRAFÍAS</button> 
+
+
+</div>
+
+
+
+
+
+
+<div id="procedimientos" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="enfermeria" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+
+
+
+
+
+<script>
+function openProcedure(evt, treatment) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(treatment).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
