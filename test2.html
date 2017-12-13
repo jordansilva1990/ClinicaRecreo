@@ -27,7 +27,7 @@ div.tab {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 30%;
-    height: 860px;
+    height: 100%;
 }
 
 /* Style the buttons inside the tab */
@@ -35,14 +35,14 @@ div.tab button {
     display: block;
     background-color: #cccccc;
     color: white;
-    padding: 6px 14px;
+    padding: 3px 14px;
     width: 100%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 /* Change background color of buttons on hover */
@@ -62,13 +62,11 @@ div.tab button.active {
     border: 1px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 860px;
+    min-height: 680px;
+    height: 100%;
 }
 
-.enfermeria{
- background: url('../assets/img/clinica.jpg')
- 
-}
+
 
 </style>
 	<script>	
@@ -136,25 +134,25 @@ div.tab button.active {
   <button class="tablinks" onclick="openProcedure(event, 'curacionS')">Curación simple</button>
   <button class="tablinks" onclick="openProcedure(event, 'curacionC')">Curación compleja</button>
   <button class="tablinks" onclick="openProcedure(event, 'cateterismo')">Cateterismo vesical</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Instalación catéter urinario permanente</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Cambio bolsa recolectora Foley</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Administración  de medicamento endovenoso</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Administración  de medicamento intramuscular</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Administración  de medicamento subcutáneo</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Fleboclisis</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Instalación sonda nasograstrica</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Nebulización</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Extraccion de puntos</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">Hemoglucotest</button>
-  <button style="font-size: 16px; background-color: #b3b3b3;" class="tablinks" onclick="openProcedure(event, 'Tokyo')">TOMA DE MUESTRAS</button>
-  <button style="font-size: 16px;" class="tablinks" onclick="openProcedure(event, 'Tokyo')">CARDIOLÓGICOS</button> 
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">ELECTROCARDIOGRAMA</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">DOPPLER COLOR</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">DOPPLER COLOR 2D</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">HOLTER DE PRESIÓN</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">HOLTER DE ARRITMIA</button>
-  <button class="tablinks" onclick="openProcedure(event, 'Tokyo')">TEST DE ESFUERZO</button>
-  <button style="font-size: 16px; background-color: #b3b3b3;" class="tablinks" onclick="openProcedure(event, 'Tokyo')">ECOTOMOGRAFÍAS</button> 
+  <button class="tablinks" onclick="openProcedure(event, 'icup')">Instalación catéter urinario permanente</button>
+  <button class="tablinks" onclick="openProcedure(event, 'cbrf')">Cambio bolsa recolectora Foley</button>
+  <button class="tablinks" onclick="openProcedure(event, 'ame')">Administración  de medicamento endovenoso</button>
+  <button class="tablinks" onclick="openProcedure(event, 'ami')">Administración  de medicamento intramuscular</button>
+  <button class="tablinks" onclick="openProcedure(event, 'ams')">Administración  de medicamento subcutáneo</button>
+  <button class="tablinks" onclick="openProcedure(event, 'feboclisis')">Fleboclisis</button>
+  <button class="tablinks" onclick="openProcedure(event, 'isn')">Instalación sonda nasograstrica</button>
+  <button class="tablinks" onclick="openProcedure(event, 'nebulizacion')">Nebulización</button>
+  <button class="tablinks" onclick="openProcedure(event, 'edp')">Extraccion de puntos</button>
+  <button class="tablinks" onclick="openProcedure(event, 'hemoglucotest')">Hemoglucotest</button>
+  <button style="font-size: 16px; background-color: #b3b3b3;" class="tablinks" onclick="openProcedure(event, 'tm')">TOMA DE MUESTRAS</button>
+  <button style="font-size: 16px;" class="tablinks" onclick="openProcedure(event, 'cardiologicos')">CARDIOLÓGICOS</button> 
+  <button class="tablinks" onclick="openProcedure(event, 'electrocardiograma')">ELECTROCARDIOGRAMA</button>
+  <button class="tablinks" onclick="openProcedure(event, 'dc')">DOPPLER COLOR</button>
+  <button class="tablinks" onclick="openProcedure(event, 'dc2d')">DOPPLER COLOR 2D</button>
+  <button class="tablinks" onclick="openProcedure(event, 'hdp')">HOLTER DE PRESIÓN</button>
+  <button class="tablinks" onclick="openProcedure(event, 'hda')">HOLTER DE ARRITMIA</button>
+  <button class="tablinks" onclick="openProcedure(event, 'tde')">TEST DE ESFUERZO</button>
+  <button style="font-size: 16px; background-color: #b3b3b3;" class="tablinks" onclick="openProcedure(event, 'ecotomografias')">ECOTOMOGRAFÍAS</button> 
 </strong>
 
 </div>
@@ -164,17 +162,23 @@ div.tab button.active {
 
 
 
-<div id="procedimientos" class="tabcontent">
+<div id="procedimientos" class="tabcontent " style="width: 70%;">
   <h3>Procedimientos</h3>
   <p>texto explicativo</p>
 </div>
 
-<div id="enfermeria" class="tabcontent">
-  <h3>Enfermería</h3>
-  <p>texto explicativo</p> 
+<div id="enfermeria" class="tabcontent " style="background-image: url('clinica.jpg'); background-size: inherit; background-position: center; width: 70%; height: 100%  ">
+	<div class="card card-inverse" >  
+  	<div class="card-img-overlay">
+  		<br style="margin-top: 400px;">
+  		 <h4 class="card-title" >Enfermería</h4>
+   		 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+   		 <br style="margin-top: 180px;">
+  </div>
+</div>
 </div>
 
-<div id="curacionS" class="tabcontent">
+<div  id="curacionS" class="tabcontent">	
   <h3>Curación simple</h3>
   <p>texto explicativo</p>
 </div>
@@ -186,7 +190,82 @@ div.tab button.active {
   <h3>Cateterismo vesical</h3>
   <p>texto explicativo</p>
 </div>
-
+<div id="icup" class="tabcontent">
+  <h3>Instalación catéter urinario permanente</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="cbrf" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="ame" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="ami" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="ams" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="feboclisis" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="isn" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="nebulizacion" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="edp" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="hemoglucotest" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="tm" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="cardiologicos" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="electrocardiograma" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="dc" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="dc2d" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="hdp" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="hda" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="tde" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
+<div id="ecotomografias" class="tabcontent">
+  <h3>Cambio bolsa recolectora Foley</h3>
+  <p>texto explicativo</p>
+</div>
 
 
 
