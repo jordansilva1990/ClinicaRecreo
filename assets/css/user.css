@@ -379,6 +379,23 @@ div.container.post {
     text-align: center;
 }
 
+.text_over_image_doc_espe {
+    position: absolute;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 70%;
+    margin-left: 5px;
+    margin-right: 5px;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:60px;
+    background-color: rgba(108,157,52,0.9);
+    text-align: center;
+}
+
 .text_over_image_agenda {
     position: absolute;
     margin: auto;

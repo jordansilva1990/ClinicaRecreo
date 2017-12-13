@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clínica Recreo</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100i,300,300i,400,700,900">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+	<link rel="stylesheet" href="assets/css/user.css">
+	<link rel="stylesheet" href="assets/css/Brands.css">
+	<link rel="stylesheet" href="assets/css/logo-slider.css">
+	<link rel="stylesheet" href="assets/css/Map-Clean.css">
+	<link rel="stylesheet" href="assets/css/reseter.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/estilo.css" type="text/css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("menuNav");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		} 
+	</script>
+</head>
+
+<body id="inicio">
+	<header id="header">
+		<div class="contenedor clearfix dropdown">
+			<ul class="clearfix" style="background-color: #fff;padding-top: 2.5em">
+				<li class="phone" style="background-color: #fff; margin-top: 1em;"><h4>LLAMANOS</h4><img src="assets/img/icons/logo-telefono.png" style="width: 30px;padding-bottom: 5px;"><a href="tel:+56226767000" target="_blank" style="color: #005f8a">32 324378</a><br><img src="assets/img/icons/logo-telefono.png" style="width: 30px;padding-bottom: 5px;"><a href="https://api.whatsapp.com/send?phone=56968596909" target="_blank" style="color: #005f8a">32 438379</a></li>
+				<li class="redes clearfix desktop tablet"  style="margin-top: 1em;">
+					<h4 style="margin-bottom: 1em;">BÚSCANOS</h4>
+					<a class="face" href="https://www.facebook.com/vitabellamedica/" target="_blank">Facebook</a>
+					<a class="inst" href="https://www.instagram.com/vitabellachile/" target="_blank">Instagram</a>
+					<!--<a class="pint" href="https://api.whatsapp.com/send?phone=56968596909" target="_blank">Pinterest</a>-->
+					<a class="mail" href="mailto:contacto@VitaBella.cl">mail</a>
+				</li>
+				<button onclick="myFunction()" id="btnNav" class="dropbtn">
+					<h4>MENÚ</h4>&nbsp;
+					<a style="color: #005f8a; text-decoration: none;"><i onclick="myFunction()" class="fa fa-bars fa-4x"></i></a>
+				</button>
+			</ul>
+			<h1><a href="index.html" class="img-responsive" style="width: 100%;min-height: 50px"></a></h1>
+		</div>
+	</header>
+	<div id="menuNav" style="display: none; margin-right: 50px; z-index: 9999; text-align: center;">
+		<center>
+			<ul class="nav navbar-nav navbar-right" style="text-align: center;">
+				<li role="presentation"><a href="index.html" style="color:#005f8a; font-size: 18px">Inicio</a></li>
+				<li role="presentation"><a href="nosotros.html" style="color:#005f8a; font-size: 18px">Nuestra Clínica</a></li>
+				<li role="presentation"><a href="equipo.html" style="color:#005f8a; font-size: 18px">Equipo Profesional</a></li>
+				<li role="presentation"><a href="index.html#contacto" style="color:#005f8a; font-size: 18px">Contacto</a></li>
+			</ul>
+		</center>
+	</div>
+	<div class="row" style="margin-right:0px;margin-left:0px;background-color:#fff;width:100%;">
+		<div class="col-md-12" style="text-align:center;width:100%;height:7px;align-content:center;padding-right:0;padding-left:0px;">
+		</div>
+	</div>
+	<div class="row" style="margin-right:0px;margin-left:0px;background-color: #ffb83f;width:100%;">
+		<div class="col-md-12" style="text-align:center;width:100%;height:37px;align-content:center;padding-right:0;padding-left:0px;">
+			<h4 class="text-nowrap text-center" style="color:rgb(255,255,255);width:100%; padding-top: 5px"><b>ATENCIÓN DOMICILIARIA</b></h4>
+		</div>
+	</div>
+	<div class="row" style="background-color: #fff; margin-left: 0px; width: 100%">
+		<div class="container" style="width:100%;">
+			<div class="row">
+				<div class="col-md-4" style="padding:0px;">
+					<section id="vertical-menu">
+						<div class="list-group">
+							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #005f8a;color: #fff;"><b>ATENCIÓN MEDICA</b></a>
+							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>ATENCIÓN DE ENFERMERÍA</b></a>
+							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>ATENCIÓN DE KINÉSICA</b></a>
+							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>AMBULANCIA Y TRASLADOS</b></a>
+						</div>
+					</section>
+				</div>
+				<div class="col-md-8" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/unidades/domiciliaria.jpg" style="width: 100%">
+				</div>
+			</div>
+		</div>
+		<div class="row" style="text-align:center;margin-right:0px;margin-left:0px;background-color:#005f8a;width:100%;height:14px;">
+			<div class="col-md-12" style="text-align:center;width:100%;height:27px;align-content:center;padding-right:0px;padding-left:0px;background-color:#005f8a;">
+				<h4 class="text-nowrap text-center" style="text-align:center;font-size:10px;color:rgb(255,255,255);width:100%;background-color:#005f8a;height:14px; padding-top: 10px">MasMargen 2017 @ A<strong>ll rights reserved</strong></h4></div>
+			</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+			<script src="assets/js/logo-slider.js"></script>
+		</body>
+		</html>
