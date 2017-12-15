@@ -27,6 +27,22 @@
 			}
 		} 
 	</script>
+	<style >
+
+	.image { 
+		position: relative; 
+
+	}
+
+	h2 { 
+		position: absolute; 
+		padding-top: 300px;
+		top: 200px; 
+		text-align: right;
+
+	}	
+
+</style>
 </head>
 
 <body id="inicio">
@@ -74,36 +90,163 @@
 				<div class="col-md-4" style="padding:0px;">
 					<section id="vertical-menu">
 						<div class="list-group">
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #005f8a;color: #fff;"><b>MEDICINA GENERAL</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>CIRUGÍA GENERAL</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>PEDIATRÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>PSIQUIATRÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>CARDIOLOGÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>FISIATRÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>TRAUMATOLOGÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>INMUNOLOGÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>NEUROLOGÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #6c9d34;color: #fff;"><b>ESPECIALIDADES CLÍNICAS</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>NUTRICIÓN</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>PSICOLOGÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>QUIROPRAXIA</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>TERAPIA OCUPACIONAL</b></a>
-							<a href="#" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>PODOLOGÍA</b></a>
+							<a href="#" id="defaultOpen" onclick="openProcedure(event, 'mgeneral')" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #005f8a;color: #fff;"><b>MEDICINA GENERAL</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'cgeneral')" class="list-group-item" style="text-align: center;font-size: 1.5em; padding: 11px 15px;background-color: #cccccc;color: #fff;"><b>CIRUGÍA GENERAL</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'pedia')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px; background-color: #b3b3b3;color: #fff;"><b>PEDIATRÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'psiquia')" class="list-group-item" style="text-align: center;font-size: 1.5em; padding: 11px 15px; background-color: #cccccc;color: #fff;"><b>PSIQUIATRÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'cardio')" class="list-group-item" style="text-align: center;font-size: 1.5em; padding: 11px 15px; background-color: #b3b3b3;color: #fff;"><b>CARDIOLOGÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'fisia')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px; background-color: #cccccc;color: #fff;"><b>FISIATRÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'trauma')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #b3b3b3;color: #fff;"><b>TRAUMATOLOGÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'inmuno')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #cccccc;color: #fff;"><b>INMUNOLOGÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'neuro')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #b3b3b3;color: #fff;"><b>NEUROLOGÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'eclinicas')" class="list-group-item" style="text-align: center;font-size: 1.5em;background-color: #6c9d34;color: #fff;"><b>ESPECIALIDADES CLÍNICAS</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'nutri')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #cccccc;color: #fff;"><b>NUTRICIÓN</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'psico')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #b3b3b3;color: #fff;"><b>PSICOLOGÍA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'quiro')" class="list-group-item tablinks" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #cccccc;color: #fff;"><b>QUIROPRAXIA</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'tocupa')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #b3b3b3;color: #fff;"><b>TERAPIA OCUPACIONAL</b></a>
+
+							<a href="#" onclick="openProcedure(event, 'podo')" class="list-group-item" style="text-align: center;font-size: 1.5em;padding: 11px 15px;background-color: #cccccc;color: #fff;"><b>PODOLOGÍA</b></a>
 						</div>
 					</section>
 				</div>
-				<div class="col-md-8" style="padding:0px;">
-					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%">
+
+
+
+
+				<div id="mgeneral" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">MEDICINA GENERAL<br />Texto explicativo variable</p></h2>
 				</div>
+
+				<div id="cgeneral" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">CIRUGÍA GENERAL<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="pedia" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">PEDIATRÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="psiquia" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">PSIQUIATRÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="cardio" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">CARDIOLOGÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="fisia" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">FISIATRÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="trauma" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">TRAUMATOLOGÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="inmuno" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">INMUNOLOGÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="neuro" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">NEUROLOGÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="eclinicas" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">ESPECIALIDADES CLÍNICAS<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="nutri" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">NUTRICIÓN<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="psico" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">PSICOLOGÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="quiro" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">QUIROPRAXIA<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="tocupa" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">TERAPIA OCUPACIONAL<br />Texto explicativo variable</p></h2>
+				</div>
+
+				<div id="podo" class="col-md-8 tabcontent image" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/fondoEspecialista.png" style="width: 100%; ">
+
+					<h2><p style="background-color:#ffffff; opacity: 0.7; margin-left: 300px; margin-right: 20px; font-size: 0.5em">PODOLOGÍA<br />Texto explicativo variable</p></h2>
+				</div>
+
+
+
+
+
 			</div>
 		</div>
 		<div class="row" style="text-align:center;margin-right:0px;margin-left:0px;background-color:#005f8a;width:100%;height:14px;">
 			<div class="col-md-12" style="text-align:center;width:100%;height:27px;align-content:center;padding-right:0px;padding-left:0px;background-color:#005f8a;">
 				<h4 class="text-nowrap text-center" style="text-align:center;font-size:10px;color:rgb(255,255,255);width:100%;background-color:#005f8a;height:14px; padding-top: 10px">MasMargen 2017 @ A<strong>ll rights reserved</strong></h4></div>
 			</div>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-			<script src="assets/js/logo-slider.js"></script>
-		</body>
-		</html>
+			<script>
+				function openProcedure(evt, treatment) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(treatment).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="assets/js/logo-slider.js"></script>
+</body>
+</html>
