@@ -415,7 +415,7 @@ div.container.post {
     top: 0;
     left:70%;
     right:0;
-    bottom:20%;
+    bottom:10%;
     color:#fff;
     height:60px;
     padding-top: 15px;
@@ -427,7 +427,7 @@ div.container.post {
     top: 0;
     left:70%;
     right:0;
-    bottom:-20%;
+    bottom:-30%;
     color:#fff;
     height:60px;
     padding-top: 15px;
@@ -439,7 +439,7 @@ div.container.post {
     top: 0;
     left:70%;
     right:0;
-    bottom:-60%;
+    bottom:-70%;
     color:#fff;
     height:60px;
     padding-top: 15px;
@@ -452,7 +452,7 @@ div.container.post {
     top: 0;
     left:70%;
     right:0;
-    bottom:-100%;
+    bottom:-110%;
     color:#fff;
     height:60px;
     padding-top: 15px;
