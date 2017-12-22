@@ -558,10 +558,14 @@ div.container.post {
     background-color: rgb(38,145,138);
     text-align: center;
 }
+h4#especialidad{
+  font-size: 2.5em;
+}
 @media only screen and (min-device-width : 1025px){
   div#moviles {display: none;}
 }
 @media only screen and (min-device-width : 0px) and (max-device-width : 1025px) {
   div#note {display: none;} 
   div#borde {display: none;} 
+  h4#especialidad{font-size: 1em;}
 }
