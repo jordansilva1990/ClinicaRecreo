@@ -485,8 +485,6 @@ div.container.post {
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 770px) {h4#agenda {visibility:hidden;}}
 
-@media screen and (min-width: 771px) and (max-width: 2000px) {h4#agen {visibility:hidden;}}   /* hide it elsewhere */
-
 @media only screen and (min-device-width: 0px) and (max-device-width: 993px) {a#nav1 {visibility:hidden;}} 
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 500px) {a#nav2 {visibility:hidden;}}
@@ -559,4 +557,11 @@ div.container.post {
     height:2em;
     background-color: rgb(38,145,138);
     text-align: center;
+}
+@media only screen and (min-device-width : 1025px){
+  div#moviles {display: none;}
+}
+@media only screen and (min-device-width : 0px) and (max-device-width : 1025px) {
+  div#note {display: none;} 
+  div#borde {display: none;} 
 }
