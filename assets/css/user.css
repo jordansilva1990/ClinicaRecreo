@@ -381,7 +381,7 @@ div.container.post {
 
 .text_over_image_doc_espe {
     position: absolute;
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin: auto;
     margin-top: 70%;
     margin-left: 5px;
@@ -392,7 +392,7 @@ div.container.post {
     bottom:0;
     color:#fff;
     height:60px;
-    background-color: rgba(108,157,52,0.9);
+    background-color: rgba(108,157,52,0.9);     
     text-align: center;
 }
 
