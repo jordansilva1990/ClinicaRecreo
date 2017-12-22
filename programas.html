@@ -74,25 +74,62 @@
 				<div class="col-md-4" style="padding:0px;">
 					<section id="vertical-menu">
 						<div class="list-group">
-							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #005f8a;color: #fff;"><b>EVALUACIÓN PREVENTIVA DE ENFERMERÍA</b></a>
-							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>SOBREPESO Y OBESIDAD</b></a>
-							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>CARDIOVASCULAR NIÑOS Y ADULTOS</b></a>
-							<a href="#" class="list-group-item" style="text-align: left;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>SALUD MENTAL Y PSICOLOGÏA</b></a>
+							<a href="#" id="defaultOpen"  onclick="openProcedure(event, 'epde')" class="list-group-item tablinks" style="text-align: left;font-size: 1.5em;background-color: #005f8a;color: #fff;"><b>EVALUACIÓN PREVENTIVA DE ENFERMERÍA</b></a>
+							<a href="#"  onclick="openProcedure(event, 'sobrepeso')" class="list-group-item tablinks" style="text-align: left;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>SOBREPESO Y OBESIDAD</b></a>
+							<a href="#"  onclick="openProcedure(event, 'cardiovascular')" class="list-group-item tablinks" style="text-align: left;font-size: 1.5em;background-color: #cccccc;color: #fff;"><b>CARDIOVASCULAR NIÑOS Y ADULTOS</b></a>
+							<a href="#"  onclick="openProcedure(event, 'mental')" class="list-group-item tablinks" style="text-align: left;font-size: 1.5em;background-color: #b3b3b3;color: #fff;"><b>SALUD MENTAL Y PSICOLOGÏA</b></a>
 						</div>
 					</section>
 				</div>
-				<div class="col-md-8" style="padding:0px;">
+
+
+
+				<div id="epde" class="col-md-8 tabcontent" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/unidades/kine.jpg" style="width: 100%">
+				</div>
+				<div id="sobrepeso" class="col-md-8 tabcontent" style="padding:0px;">
 					<img class="img-responsive" src="assets/img/unidades/programas.jpg" style="width: 100%">
 				</div>
+
+				<div id="cardiovascular" class="col-md-8 tabcontent" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/unidades/programas.jpg" style="width: 100%">
+				</div>
+
+				<div id="mental" class="col-md-8 tabcontent" style="padding:0px;">
+					<img class="img-responsive" src="assets/img/unidades/kine.jpg" style="width: 100%">
+				</div>
+
+
+
+
 			</div>
 		</div>
 		<div class="row" style="text-align:center;margin-right:0px;margin-left:0px;background-color:#005f8a;width:100%;height:14px;">
 			<div class="col-md-12" style="text-align:center;width:100%;height:27px;align-content:center;padding-right:0px;padding-left:0px;background-color:#005f8a;">
 				<h4 class="text-nowrap text-center" style="text-align:center;font-size:10px;color:rgb(255,255,255);width:100%;background-color:#005f8a;height:14px; padding-top: 10px">MasMargen 2017 @ A<strong>ll rights reserved</strong></h4></div>
 			</div>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-			<script src="assets/js/logo-slider.js"></script>
-		</body>
-		</html>
+
+			<script>
+				function openProcedure(evt, treatment) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(treatment).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="assets/js/logo-slider.js"></script>
+</body>
+</html>
