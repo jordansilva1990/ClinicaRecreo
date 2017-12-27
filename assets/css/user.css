@@ -174,7 +174,7 @@ div.container.post {
   display:none;
   position:absolute;
   top:0;
-  background:rgba(255, 255, 255, 0.8);
+  background:rgba(0,95,138,0.9);
   text-align:center;
   padding:6em 2em 0em 2em;
   bottom:0;
@@ -185,7 +185,7 @@ div.container.post {
   font-weight:700;
   font-size:1.5em;
   text-transform:uppercase;
-  color:rgb(173,20,98);
+  color:rgb(255,255,255);
 }
 .portfolio-work-grid:hover a.textImagen{
   display:none;

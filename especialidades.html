@@ -60,7 +60,7 @@
 		</center>
 	</div>
 	<div class="row" style="margin-right:0px;margin-left:0px;background-color:#fff;width:100%;">
-		<div class="col-md-12" style="text-align:center;width:100%;height:37px;align-content:center;padding-right:0;padding-left:0px;">
+		<div class="col-md-12" style="text-align:center;width:100%;height:7px;align-content:center;padding-right:0;padding-left:0px;">
 		</div>
 	</div>
 	<div class="row" style="margin-right:0px;margin-left:0px;background-color: #6c9d34;width:100%;">
@@ -74,131 +74,125 @@
 				<div class="col-md-4" style="padding:0px;">
 					<section id="vertical-menu">
 						<div class="list-group">
+							<a  class="list-group-item tablinks" data-toggle="collapse" data-target="#demo" style="text-align: center;font-size: 2.5em;background-color: #005f8a;color: #fff;height: 150px;padding-top: 15px"><b>ESPECIALIDADES MÉDICAS</b></a>
+							<div id="demo" class="collapse">
+								<a class="list-group-item tablinks" id="defaultOpen" onclick="openProcedure(event, 'mgeneral')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff; height: 80px;padding-top: 10px"><b>MEDICINA GENERAL</b></a>
+								<a class="list-group-item tablinks" onclick="openProcedure(event, 'integra')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff; height: 80px;padding-top: 10px"><b>MEDICINA INTEGRATIVA</b></a>
 
-							<a href="#" class="list-group-item tablinks" id="defaultOpen" onclick="openProcedure(event, 'mgeneral')" style="text-align: center;font-size: 2.5em;background-color: #005f8a;color: #fff; height: 80px;padding-top: 10px"><b>MEDICINA GENERAL</b></a>
+								<a class="list-group-item tablinks" onclick="openProcedure(event, 'cgeneral')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>CIRUGÍA GENERAL</b></a>
 
-							<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'cgeneral')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>CIRUGÍA GENERAL</b></a>
-							
-							<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'cns')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>CONTROL NIÑO SANO</b></a>
-							
-							<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'psiquia')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>PSIQUIATRÍA</a>
+								<a  class="list-group-item tablinks" onclick="openProcedure(event, 'cns')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>CONTROL NIÑO SANO</b></a>
 
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'fisia')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>FISIATRÍA</b></a>
-								
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'trauma')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>TRAUMATOLOGÍA</b></a>								
-								
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'cardio')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>CARDIOLOGÍA</b></a>
+								<a  class="list-group-item tablinks" onclick="openProcedure(event, 'psiquia')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>PSIQUIATRÍA</b></a>
 
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'nuero')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>NEUROLOGÍA</b></a>
+								<a class="list-group-item tablinks" onclick="openProcedure(event, 'fisia')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>FISIATRÍA</b></a>
 
-								<a href="#" class="list-group-item tablinks" style="text-align: center;font-size: 2.5em;background-color: #005f8a;color: #fff;height: 150px;padding-top: 15px"><b>ESPECIALIDADES CLINICAS</b></a>
+								<a class="list-group-item tablinks" onclick="openProcedure(event, 'trauma')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>TRAUMATOLOGÍA</b></a>								
 
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'nutri')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>NUTRICIÓN</b></a>
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'psico')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>PSICOLOGÍA</b></a>
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'quiro')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>QUIROPRAXIA</b></a>
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'tocupa')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>TERAPIA OCUPACIONAL</b></a>
-								<a href="#" class="list-group-item tablinks" onclick="openProcedure(event, 'podo')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>PODOLOGÍA</b></a>
+								<a class="list-group-item tablinks" onclick="openProcedure(event, 'cardio')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>CARDIOLOGÍA</b></a>
 
-
-
-							</div>
-						</section>
-					</div>
-
-
-
-
-					<div class="col-md-8" style="padding:0px;">
-						<div class="portfolio-works">
-
-							<div id="mgeneral" class="tabcontent">
-
-
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dr-bermudez.jpg">
-										<h4 class="text_over_image_doc_espe" style="padding-top: 10px">Dr. Jorge Bermudez Cardona<br>Medicina general e Infantil</h4>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dr-berrios.jpg" title="name">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Ernesto Reyes Arriagada<br>Medicina general e Infantil</h4>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dr-romano.jpg">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Jesus Romano de la Torre<br>Médico General Adultos e Infantil</h4>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dr-rodriguez.jpg">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Guillermo Rodríguez Chalita<br>Médico General Adultos e Infantil</h4>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dra-arancibia.jpg" title="name">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Javiera Arancibia Berríos<br>Médico General Adultos e Infantil</h4>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dr-torres.jpg">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Cesar Torres Mendoza<br>Médico General Adultos e Infantil</h4>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dra-berenice.png">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Berenice Riquelme Andalaf<br>Medicina Integrativa</h4>
-									</div>
-								</div>
-								
-								
-								
-								
-								
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dra-mandujano.jpg">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dra. Angela Castillo Mandujano<br>Médico General - Inmunología</h4>
-									</div>
-								</div>
-								
-								
-								
-								
-								
-								<div class="clearfix"> </div>
-
-
-
-
-
+								<a class="list-group-item tablinks" onclick="openProcedure(event, 'nuero')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>NEUROLOGÍA</b></a>
 							</div>
 
-
-
-
-
-							<div id="psiquia" class="tabcontent">
-								<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-									<div class="portfolio-work-grid-pic">
-										<img src="assets/img/equipo/dra-pino.jpg">
-										<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dra. Mariela Pino Droguett<br>Psiquiatra Infanto Juvenil</h4>
-									</div>
-								</div>
-								
+							<a  class="list-group-item tablinks" data-toggle="collapse" data-target="#demo2" style="text-align: center;font-size: 2.5em;background-color: #005f8a;color: #fff;height: 150px;padding-top: 15px"><b>ESPECIALIDADES CLINICAS</b></a>
+							<div id="demo2" class="collapse">
+								<a  class="list-group-item tablinks" onclick="openProcedure(event, 'nutri')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>NUTRICIÓN</b></a>
+								<a  class="list-group-item tablinks" onclick="openProcedure(event, 'psico')" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>PSICOLOGÍA</b></a>
+								<a href="" class="list-group-item tablinks" onclick="openProcedure(event, 'quiro')" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>QUIROPRAXIA</b></a>
+								<a  class="list-group-item tablinks" style="text-align: center;font-size: 2.5em;background-color: #cccccc;color: #fff;height: 80px;padding-top: 10px"><b>TERAPIA OCUPACIONAL</b></a>
+								<a class="list-group-item tablinks" style="text-align: center;font-size: 2.5em;background-color: #b3b3b3;color: #fff;height: 80px;padding-top: 10px"><b>PODOLOGÍA</b></a>
 							</div>
+						</div>
+					</section>
+				</div>
+
+				<div class="col-md-8" style="padding:0px;">
+					<div class="portfolio-works">
+
+						<div id="mgeneral" class="tabcontent">
 
 
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dr-bermudez.jpg">
+									<h4 class="text_over_image_doc_espe" style="padding-top: 10px">Dr. Jorge Bermudez Cardona<br>Medicina general e Infantil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Jorge Bermudez Cardona</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=289&resId=66', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dr-berrios.jpg" title="name">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Ernesto Reyes Arriagada<br>Medicina general e Infantil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Ernesto Reyes Arriagada</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=289&resId=9', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dr-romano.jpg">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Jesus Romano de la Torre<br>Médico General Adultos e Infantil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Jesus Romano de la Torre</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=67&resId=2', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dr-rodriguez.jpg">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Guillermo Rodríguez Chalita<br>Médico General Adultos e Infantil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Guillermo Rodríguez Chalita</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=289&resId=55', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dra-arancibia.jpg" title="name">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Javiera Arancibia Berríos<br>Médico General Adultos e Infantil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Javiera Arancibia Berríos</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=67&resId=4', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dr-torres.jpg">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Cesar Torres Mendoza<br>Médico General Adultos e Infantil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Cesar Torres Mendoza</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=289&resId=49', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>							
+
+							<div class="clearfix"> </div>
+						</div>
+						<div id="integra" class="tabcontent">								
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dra-berenice.png">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Berenice Riquelme Andalaf<br>Medicina Integrativa</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Berenice Riquelme Andalaf</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=327&resId=51', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
 						</div>
 
+						<div id="psiquia" class="tabcontent">
+							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="assets/img/equipo/dra-pino.jpg">
+									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dra. Mariela Pino Droguett<br>Psiquiatra Infanto Juvenil</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dra. Mariela Pino Droguett</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=38&resId=27', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
+							</div>
 
-
+						</div>
 
 
 						<div id="fisia" class="tabcontent">
@@ -206,6 +200,9 @@
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/dra-jara.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dra. Ana Carolina Jara Ginsberg<br>Fisiatra y Rehabilitación</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dra. Ana Carolina Jara Ginsberg</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=22&resId=38', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
 								</div>
 							</div>
 						</div>
@@ -217,12 +214,10 @@
 									<img src="assets/img/equipo/ops-cruz.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Denisse Cruz Salazar<br>Nutricionista</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Denisse Cruz Salazar</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=69&resId=17', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
-							
-							
-
-
-
 						</div>
 
 						<div id="psico" class="tabcontent">
@@ -231,33 +226,41 @@
 									<img src="assets/img/equipo/ops-bernal.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Alejandra Bernal González<br>Psicóloga Adulto</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Alejandra Bernal González</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=68&resId=41', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/ops-soto.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Ximena Soto Gaez<br>Psicóloga Clínico</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Berenice Riquelme Andalaf</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=327&resId=51', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
 						</div>
+
 						<div id="quiro" class="tabcontent">
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/dr-daniels.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Valentin Daniels Katz<br>Quiropraxia - Reflexoterapia</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Valentin Daniels Katz</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=68&resId=15', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
 						</div>
-
-
-
-
-
 
 						<div id="trauma" class="tabcontent">
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn " data-wow-delay="0.4s">
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/ops-fabres.jpg" title="name">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Carolina Fabres Saldivia<br>Kinesióloga</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Carolina Fabres Saldivia</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=70&resId=21', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn " data-wow-delay="0.4s">
@@ -266,11 +269,17 @@
 									<img src="assets/img/equipo/opm-sheers.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Montserrat López Sheers<br>Kinesióloga</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Montserrat López Sheers</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=70&resId=64', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
 							<div  class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn " data-wow-delay="0.4s">
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/ops-dalencon.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Brian D'alencon Palamara<br>Kinesiólogo</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Brian D'alencon Palamara</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=70&resId=23', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
 								</div>
 							</div>	
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
@@ -278,12 +287,11 @@
 									<img src="assets/img/equipo/dr-perlaza.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Rodrigo Perlaza Prado<br>Traumatólogo Ortopediatra</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Rodrigo Perlaza Prado</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=34&resId=26', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
-
-
 						</div>
-
-
 
 						<div id="inmuno" class="tabcontent">
 
@@ -292,6 +300,9 @@
 									<img src="assets/img/equipo/dra-mandujano.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dra. Angela Castillo Mandujano<br>Médico General - Inmunología</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dra. Angela Castillo Mandujano</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=60&resId=48', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
 						</div>
 						<div id="nuero" class="tabcontent">
@@ -299,6 +310,9 @@
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/dra-nn.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Felipe Fernández Andrade<br>Neurólogo Adultos</h4>
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Felipe Fernández Andrade</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=30&resId=71', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
 								</div>
 							</div>
 
@@ -310,6 +324,9 @@
 									<img src="assets/img/equipo/dr-valderrama.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Horacio Valderrama González<br>Cardiólogo</h4>
 								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Berenice Riquelme Andalaf</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=327&resId=51', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
+								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
 								<div class="portfolio-work-grid-pic">
@@ -319,24 +336,17 @@
 							</div>
 						</div>
 
-
-
-
 						<div id="cgeneral" class="tabcontent">
 							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
 								<div class="portfolio-work-grid-pic">
 									<img src="assets/img/equipo/dr-dalbora.jpg">
 									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dr. Jorge D'albora Padovani<br>Médico Cirujano Tórax</h4>
 								</div>
-							</div>
-							<div class="col-md-4 col-sm-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
-								<div class="portfolio-work-grid-pic">
-									<img src="assets/img/equipo/dra-michea.jpg">
-									<h4 class="text_over_image_doc_espe"  style="padding-top: 10px">Dra. Karina Michea Nuñez<br>Médico Cirujano - Pediatría</h4>
+								<div class="portfolio-work-grid-caption">
+									<h4>Dr. Jorge D'albora Padovani</h4><br><br><button style="background-color: #6c9d34; color: #fff; border-radius: 25px; width: 10em;height: 3em;" onclick="window.open('https://api.clinicarecreo.ziz.cl/widget/agenda/?specialtyId=3&resId=8', 'Agendamiento Online', 'width=400,height=600,location=no,directories=no,menubar=no,status=no,toolbar=no,scrollbars=yes,titlebar=no')" type="button">RESERVA AHORA</button>
 								</div>
 							</div>
 						</div>
-
 						<div class="clearfix"> </div>
 					</div>
 				</div>
