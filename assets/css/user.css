@@ -174,7 +174,7 @@
     display:none;
     position:absolute;
     top:0;
-    background:rgba(0,95,138,0.9);
+    background:rgba(0,95,138,0.5);
     text-align:center;
     padding:6em 2em 0em 2em;
     bottom:0;
@@ -589,7 +589,12 @@
 }
 h4#especialidad{
   font-size: 2.5em;
+  height: 80px;
 }
+.especialidad2 h4{
+  padding-top: 20px;
+}
+
 @media only screen and (min-device-width : 1025px){
   div#moviles {display: none;}
 }
@@ -597,6 +602,7 @@ h4#especialidad{
   div#note {display: none;} 
   div#borde {display: none;} 
   h4#especialidad{font-size: 1em;}
+  h4#especialidad{height: 35px;}
 }
 
 .float{
@@ -643,3 +649,9 @@ h4#especialidad{
 @media only screen and (min-device-width : 1025px){
   div#abajo {display: none;}
 }
+
+#boton a:hover{
+  opacity: 0.5;
+}
+
+
