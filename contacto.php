@@ -9,7 +9,7 @@ $mensaje=$_POST['mensaje'];
  
 $to = "jordan.silva.ortega@gmail.com";
 $subject = "Clinica Recreo - Formulario Reserva Estetica";
-$message = " Name: " . $name . "\r\n Rut: " . $rut . "\r\n Phone: " . $phone . "\r\n Email: " . $email. "\r\n Mensaje: " . $mensaje;
+$message = " Nombre: " . $name . "\r\n Rut: " . $rut . "\r\n Telefono: " . $phone . "\r\n Email: " . $email. "\r\n Mensaje: " . $mensaje;
  
  
 $from = "Clinica Recreo";
@@ -19,6 +19,8 @@ $headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
 if(@mail($to,$subject,$message,$headers))
 {
   echo "Funciona";
+  header("Location: http://http://clinicarecreo.cl/");
+die();
  
 }else{
   echo "Problemas!";
