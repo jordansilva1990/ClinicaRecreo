@@ -645,9 +645,11 @@ h4#especialidad{
 }
 @media only screen and (max-device-width : 1024px){
   div#encima {display: none;}
+  div#grande {display: none;}
 }
 @media only screen and (min-device-width : 1025px){
   div#abajo {display: none;}
+  div#chico {display: none;}
 }
 
 #boton a:hover{

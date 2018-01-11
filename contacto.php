@@ -6,8 +6,9 @@ $rut=$_POST['rut'];
 $phone=$_POST['telefono'];
 $email=$_POST['correo'];
 $mensaje=$_POST['mensaje'];
+$asunto=$_POST['asunto'];
  
-$to = "jordan.silva.ortega@gmail.com";
+$to = "contacto@clinicarecreo.cl";
 $subject = "Clinica Recreo - Formulario Reserva Estetica";
 $message = " Nombre: " . $name . "\r\n Rut: " . $rut . "\r\n Telefono: " . $phone . "\r\n Email: " . $email. "\r\n Mensaje: " . $mensaje;
  

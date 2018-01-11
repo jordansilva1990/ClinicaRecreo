@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/styles.min.css">
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap2.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -49,14 +49,29 @@
 			<div id="contact" style="background-color:rgba(255,255,255,0);">
 				<div class="container">
 					<div class="intro">
-					<center>
-						<br>
-						<h3 style="color:#015F8A;">Solicita tu hora aquí</h3>
-						<p> </p>
+						<center>
+							<br>
+							<h3 style="color:#015F8A;">Solicita tu hora aquí</h3>
+							<p> </p>
 						</center>
 					</div>
 					<form action="contacto.php" method="post" id="contact-form">
 						<div class="messages"></div>
+						<div class="controls">
+							<div class="form-row">
+								<div class="col-md-6">
+									<div class="form-group"><label for="form_asunto">Asunto</label>
+										<select class="form-control" id="form-control" name="asunto">
+											<option value="seleccione">Seleccione</option>
+											<option value="dental">Dental</option>
+											<option value="estetica">Estética</option>
+											<option value="arancel">Arancel</option>
+										</select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="controls">
 							<div class="form-row">
 								<div class="col-md-6">
